@@ -1,0 +1,57 @@
+svg.icon {
+  /* 这里定义svg.icon，避免和Butterfly自带的note标签冲突 */
+   width: 0.15em; height: 0.15em;
+   /* width和height定义图标的默认宽度和高度*/
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+@font-face{
+  font-family:'Candyhome' ;  /* 字体名自定义即可 */
+  src:url('/fonts/Candy.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+/* 字体设置 */
+/* 网站标题 */
+h1#site-title {
+  font-family: 'Candyhome', sans-serif;
+}
+/* 导航栏 */
+#nav #search-button {
+  display: inline;
+  padding: 0 0 0 0.7rem;
+  font-family: 'Candyhome', sans-serif;
+  font-size: 24px;
+}
+#nav .menus_items {
+  display: inline;
+  font-family: 'Candyhome', sans-serif;
+  font-size: 24px;
+}
+#nav #site-name {
+  text-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 15%);
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Candyhome', sans-serif;
+  font-size: 24px;
+}
+/* 侧边栏 */
+#aside-content .card-widget {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  font-family: 'Candyhome', sans-serif;
+  font-size: 15px;
+  background: rgba(255,255,255,.8);
+  -webkit-box-shadow: var(--card-box-shadow);
+  box-shadow: var(--card-box-shadow);
+  -webkit-transition: box-shadow 0.3s;
+  -moz-transition: box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  -ms-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
