@@ -156,3 +156,38 @@ h6 {
 h5 {
   color:royalblue;
 }
+
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+
+#article-container h1:before {
+  font-family: "iconfont";
+  content: "\e669";
+}
+#article-container h2:before {
+  font-family: "iconfont";
+  content: "\e670";
+}
+#article-container h3:before {
+  font-family: "iconfont";
+  content: "\e66a";
+}
+#article-container h4:before {
+  font-family: "iconfont";
+  content: "\e672";
+}
+#article-container h5:before {
+  font-family: "iconfont";
+  content: "\e66d";
+}
+#article-container h6:before {
+  font-family: "iconfont";
+  content: "\e671";
+}
