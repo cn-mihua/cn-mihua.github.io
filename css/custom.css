@@ -55,3 +55,104 @@ h1#site-title {
   -ms-transition: box-shadow 0.3s;
   transition: box-shadow 0.3s;
 }
+
+.icon {
+  width: 1em; height: 1em;
+  /* width和height定义图标的默认宽度和高度*/
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/*阿里图标*/
+@import "//at.alicdn.com/t/font_2378660_auezyg7ybqo.css";
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 1.3em;
+  /* 可以定义图标大小 */
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+  .icon-rat:before {
+    color: #85c3de;
+  }
+  .icon-ox:before {
+    color: #ffaf6e;
+  }
+  .icon-tiger:before {
+    color: #f7c768;
+  }
+  .icon-rabbit:before {
+    color: #ffbdd8;
+  }
+  .icon-dragon:before {
+    color: #ff8787;
+  }
+  .icon-snake:before {
+    color: #c3d686;
+  }
+  .icon-horse:before {
+    color: #ffaf6e;
+  }
+  .icon-goat:before {
+    color: #f7c768;
+  }
+  .icon-monkey:before {
+    color: #c3d686;
+  }
+  .icon-rooster:before {
+    color: #ff8787;
+  }
+  .icon-dog:before {
+    color: #85c3de;
+  }
+  .icon-boar:before {
+    color: #ffbdd8;
+  }
+
+/* 页脚透明 */
+#footer{
+  background: transparent!important;
+}
+/* 头图透明 */
+#page-header{
+  background: transparent!important;
+}
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header.post-bg:before {
+  background-color: transparent!important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    }
+
+/*文章标题样式*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Candyhome', sans-serif;
+}
+h1 {
+  color:crimson;
+}
+h2 {
+  color:rebeccapurple;
+}
+h3 {
+  color:darkorange;
+}
+h4 {
+  color:#ffaf6e;
+}
+h6 {
+  color:lightgreen;
+}
+h5 {
+  color:royalblue;
+}

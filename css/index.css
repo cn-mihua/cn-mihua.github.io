@@ -3292,6 +3292,10 @@ span.shuoshuo_author_img {
 .power {
   display: none;
 }
+#artitalk_main .shuoshuo_text {
+  border: 1px solid #f60 !important;
+  color: #60c !important;
+}
 #post-comment .comment-head {
   margin-bottom: 1rem;
 }
