@@ -12,8 +12,13 @@ svg.icon {
   src:url('/fonts/Candy.ttf'); /* 字体文件路径 */
   font-display : swap;
 }
-
 /* 字体设置 */
+@font-face{
+  font-family:'fzkt' ;  /* 字体名自定义即可 */
+  src:url('/fonts/FZKTJW_0.ttf'); /* 字体文件路径 */
+  font-size: large;
+  font-display : swap;
+}
 /* 网站标题 */
 h1#site-title {
   font-family: 'Candyhome', sans-serif;
@@ -139,10 +144,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Candyhome', sans-serif;
 }
 h1 {
-  color:crimson;
+  color:rebeccapurple;
 }
 h2 {
-  color:rebeccapurple;
+  color:royalblue;
 }
 h3 {
   color:darkorange;
@@ -166,28 +171,145 @@ h5 {
   overflow: hidden;
 }
 
-
+/*文章字体大小*/
+#article-container {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: large;
+  font-weight: bold;
+}
 #article-container h1:before {
   font-family: "iconfont";
   content: "\e669";
+  color:red;
 }
 #article-container h2:before {
   font-family: "iconfont";
   content: "\e670";
+  color:red;
 }
 #article-container h3:before {
   font-family: "iconfont";
   content: "\e66a";
+  color:red;
 }
 #article-container h4:before {
   font-family: "iconfont";
   content: "\e672";
+  color:red;
 }
 #article-container h5:before {
   font-family: "iconfont";
   content: "\e66d";
+  color:red;
 }
 #article-container h6:before {
   font-family: "iconfont";
   content: "\e671";
+  color:red;
+}
+
+/*相册页面定位修复*/
+a > img, .justified-gallery > div > img,
+.justified-gallery > figure > img,
+.justified-gallery > a > a > img,
+.justified-gallery > div > a > img,
+.justified-gallery > figure > a > img,
+.justified-gallery > a > svg,
+.justified-gallery > div > svg,
+.justified-gallery > figure > svg,
+.justified-gallery > a > a > svg,
+.justified-gallery > div > a > svg,
+.justified-gallery > figure > a > svg{
+  position:static!important;
+}
+
+/*代码文字大小*/
+#article-container pre, #article-container code {
+  font-size: medium;
+  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+}
+/*表格文字大小*/
+.table-wrap {
+  overflow-x: scroll;
+  margin: 0 0 1rem;
+  font-size: medium;
+}
+
+/*评论区发送预览按钮*/
+.el-button--small, .el-button--small.is-round {
+  padding: 9px 15px;
+  font-size: medium !important;
+}
+/*评论区字体大小*/
+.el-textarea {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
+  font-size: large !important;
+}
+/*游客信息输入字体大小*/
+.el-input-group {
+  line-height: normal;
+  display: inline-table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: medium !important;
+}
+.tk-main {
+  flex: 1;
+  width: 0;
+  font-size: medium !important;
+}
+.tk-extras {
+  color: #333 !important;
+  font-size: 0.875em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*文章封面高度修正*/
+#recent-posts > .recent-post-item:not(:first-child) {
+  margin-top: 1rem;
+  height: 280px;
+}
+
+/*分割符颜色*/
+:root {
+  --hr-border: #00CC66 !important;
+  --hr-before-color: #00CC66 !important;
+}
+
+/*post文章字体大小*/
+/*post文章标题字体大小*/
+#post-info .post-title {
+  margin-bottom: 0.4rem;
+  color: var(--white);
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 1.5;
+  -webkit-line-clamp: 3;
+}
+/*post文章信息字体大小*/
+#post-info #post-meta {
+  color: var(--light-grey);
+  font-size: 80%;
+}
+/*copyright声明字体大小*/
+#post .post-copyright {
+  font-size: medium !important;
+}
+/*相关文章字体大小*/
+.relatedPosts > .headline {
+  font-size: 1em !important;
+}
+/*评论两个字字体大小*/
+#post-comment .comment-head .comment-headline {
+  font-size: 1em !important;
+}
+/*页脚字体大小*/
+#footer-wrap {
+  font-size: medium;
 }
