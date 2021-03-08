@@ -229,12 +229,12 @@ a > img, .justified-gallery > div > img,
   font-size: medium;
   font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
 }
-/*表格文字大小*/
+/*表格文字大小
 .table-wrap {
   overflow-x: scroll;
   margin: 0 0 1rem;
   font-size: medium;
-}
+}*/
 
 /*评论区发送预览按钮*/
 .el-button--small, .el-button--small.is-round {
