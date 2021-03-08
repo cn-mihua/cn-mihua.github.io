@@ -333,4 +333,66 @@ a > img, .justified-gallery > div > img,
   transform: translate3d(-100%, 0, 0);
   font-size: small;
 }
+
+#page-header.full_page {
+  height: 100vh;
+  background-attachment: fixed;
+  font-size: small;
+}
+#nav #search-button {
+  display: inline;
+  padding: 0 0 0 0.7rem;
+  font-family: 'Candyhome', sans-serif;
+  font-size: 18px !important;
+}
+@media screen and (max-width: 600px){
+.blog-slider__img {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50%;
+}
+.blog-slider__content {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 400px;
+}
+.blog-slider__text {
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+#page-header.post-bg {
+  height: 18rem;
+  font-size: medium;
+}
+#article-container ol, #article-container ul {
+  margin-top: 0.4rem;
+  font-size: medium;
+}
+#article-container p {
+  margin: 0 0 0.8rem;
+  font-size: medium;
+}
+h1 {
+  font-size: larger;
+}
+h2 {
+  font-size: larger;
+}
+h3 {
+  font-size: larger;
+}
+h4 {
+  font-size: larger;
+}
+h6 {
+  font-size: larger;
+}
+h5 {
+  font-size: larger;
+}
+}
 /*手机端优化end*/
