@@ -313,3 +313,67 @@ a > img, .justified-gallery > div > img,
 #footer-wrap {
   font-size: medium;
 }
+
+@media screen and (max-width: modal-threshold){
+	/*文章封面高度修正*/
+	#recent-posts > .recent-post-item:not(:first-child) {
+	margin-top: 1rem;
+	height: 280px;
+	}
+
+	/*分割符颜色*/
+	:root {
+	--hr-border: #00CC66 !important;
+	--hr-before-color: #00CC66 !important;
+	}
+
+	/*post文章字体大小*/
+	/*post文章标题字体大小*/
+	#post-info .post-title {
+	margin-bottom: 0.4rem;
+	color: var(--white);
+	font-weight: normal;
+	font-size: 1.5em;
+	line-height: 1.5;
+	-webkit-line-clamp: 3;
+	}
+	/*post文章信息字体大小*/
+	#post-info #post-meta {
+	color: var(--light-grey);
+	font-size: 60%;
+	}
+	/*copyright声明字体大小*/
+	#post .post-copyright {
+	font-size: 13px;
+	}
+	/*相关文章字体大小*/
+	.relatedPosts > .headline {
+	font-size: 1em !important;
+	}
+	/*评论两个字字体大小*/
+	#post-comment .comment-head .comment-headline {
+	font-size: 1em !important;
+	}
+	/*页脚字体大小*/
+	#footer-wrap {
+	font-size: 13px;
+	}
+	/* 侧边栏 */
+	#aside-content .card-widget {
+	position: relative;
+	overflow: hidden;
+	margin-top: 1rem;
+	padding: 1rem 1.2rem;
+	border-radius: 8px;
+	font-family: 'Candyhome', sans-serif;
+	font-size: 13px;
+	background: rgba(255,255,255,.8);
+	-webkit-box-shadow: var(--card-box-shadow);
+	box-shadow: var(--card-box-shadow);
+	-webkit-transition: box-shadow 0.3s;
+	-moz-transition: box-shadow 0.3s;
+	-o-transition: box-shadow 0.3s;
+	-ms-transition: box-shadow 0.3s;
+	transition: box-shadow 0.3s;
+	}
+}
