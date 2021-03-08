@@ -378,18 +378,19 @@ a > img, .justified-gallery > div > img,
 	}
   #recent-posts > .recent-post-item:not(:first-child) {
   margin-top: 1rem;
-  height: 280px;
+  width: 100%;
+  height: auto;
   }
   #recent-posts > .recent-post-item .post_cover {
   overflow: hidden;
-  width: device-width;
-  height: 50%;
+  width: 100%;
+  height: auto;
   }
   #recent-posts > .recent-post-item >.recent-post-info {
   display: inline-block;
   overflow: hidden;
   padding: 0 40px;
-  width: device-width;
-  height: 50%;
+  width: 100%;
+  height: auto;
   }
 }
