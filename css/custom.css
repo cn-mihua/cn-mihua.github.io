@@ -323,8 +323,8 @@ a > img, .justified-gallery > div > img,
 
 	/*分割符颜色*/
 	:root {
-	--hr-border: #00CC66 !important;
-	--hr-before-color: #00CC66 !important;
+	--hr-border: #111111 !important;
+	--hr-before-color: #111111 !important;
 	}
 
 	/*post文章字体大小*/
@@ -376,4 +376,10 @@ a > img, .justified-gallery > div > img,
 	-ms-transition: box-shadow 0.3s;
 	transition: box-shadow 0.3s;
 	}
+  #recent-posts > .recent-post-item .post_cover {
+    overflow: hidden;
+    width: device-width;
+    height: 100%;
+    -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+}
 }
