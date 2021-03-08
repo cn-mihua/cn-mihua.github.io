@@ -315,7 +315,7 @@ a > img, .justified-gallery > div > img,
 }
 
 /*手机端优化start*/
-@media screen and (max-width: device-width){
+@media screen and (max-width: 600px){
 #recent-posts > .recent-post-item:not(:first-child) {
 margin-top: 1rem;
 width: 100%;
@@ -414,6 +414,9 @@ table th, table td {
   border: 1px solid var(--light-grey);
   vertical-align: middle;
   /* width: 100%; */
+}
+#nav .menus_items {
+  display: none;
 }
 }
 /*手机端优化end*/

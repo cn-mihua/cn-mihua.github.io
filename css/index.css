@@ -4710,7 +4710,6 @@ _:future,
 #sidebar #sidebar-menus .menus_items .menus_item_child {
   margin: 0;
   list-style: none;
-  display: none;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -8966,6 +8965,9 @@ table th, table td {
   border: 1px solid var(--light-grey);
   vertical-align: middle;
   /* width: 100%; */
+}
+#nav .menus_items {
+  display: none;
 }
 }
 /*手机端优化end*/
