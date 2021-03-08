@@ -270,11 +270,11 @@ a > img, .justified-gallery > div > img,
   flex-wrap: wrap;
 }
 
-/*文章封面高度修正*/
+/*文章封面高度修正
 #recent-posts > .recent-post-item:not(:first-child) {
   margin-top: 1rem;
   height: 280px;
-}
+}*/
 
 /*分割符颜色*/
 :root {
