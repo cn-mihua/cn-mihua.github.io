@@ -8966,9 +8966,6 @@ table th, table td {
   vertical-align: middle;
   /* width: 100%; */
 }
-#nav .menus_items {
-  display: none;
-}
 }
 /*手机端优化end*/
 .search-dialog {
