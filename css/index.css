@@ -8875,7 +8875,7 @@ a > img, .justified-gallery > div > img,
 }
 
 /*手机端优化start*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
 #recent-posts > .recent-post-item:not(:first-child) {
 margin-top: 1rem;
 width: 100%;
@@ -8902,6 +8902,7 @@ font-size: small;
   margin-bottom: 0px;
   display: block;
   font-weight: 500;
+  margin-top: 25px;
 }
 .blog-slider__img {
   -webkit-transform: translateY(-50%);
@@ -8975,6 +8976,12 @@ table th, table td {
   border: 1px solid var(--light-grey);
   vertical-align: middle;
   /* width: 100%; */
+}
+#rightside > div > button, #rightside > div > a {
+  margin-right: 6px;
+}
+#nav .site-page {
+  font-size: 1em;
 }
 }
 /*手机端优化end*/
