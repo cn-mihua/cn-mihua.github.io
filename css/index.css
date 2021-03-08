@@ -8867,7 +8867,7 @@ a > img, .justified-gallery > div > img,
 }
 
 /*手机端优化start*/
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 600px){
 #recent-posts > .recent-post-item:not(:first-child) {
 margin-top: 1rem;
 width: 100%;
