@@ -314,7 +314,7 @@ a > img, .justified-gallery > div > img,
   font-size: medium;
 }
 
-@media screen and (max-width: device-width){
+@media screen and (max-width: 1080px){
 	/*文章封面高度修正*/
 	#recent-posts > .recent-post-item:not(:first-child) {
 	margin-top: 1rem;
