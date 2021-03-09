@@ -8542,19 +8542,19 @@ h1#site-title {
   display: inline;
   padding: 0 0 0 0.7rem;
   font-family: 'Candyhome', sans-serif;
-  font-size: large;
+  font-size: larger;
 }
 #nav .menus_items {
   display: inline;
   font-family: 'Candyhome', sans-serif;
-  font-size: large;
+  font-size: larger;
 }
 #nav #site-name {
   text-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 15%);
   font-weight: bold;
   cursor: pointer;
   font-family: 'Candyhome', sans-serif;
-  font-size: large;
+  font-size: larger;
 }
 /* 归档半透明 */
 div#archive {
@@ -9002,13 +9002,13 @@ table th, table td {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: large;
+  font-size: larger;
 }
 .tk-content[data-v-d82ce9a0] {
   margin-top: 0.5rem;
   overflow: auto;
   max-height: 500px;
-  font-size: large;
+  font-size: larger;
 }
 .tk-extras[data-v-d82ce9a0] {
   color: #999999;
