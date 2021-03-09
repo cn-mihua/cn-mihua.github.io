@@ -334,14 +334,14 @@ a > img, .justified-gallery > div > img,
   margin-bottom: 0.4rem;
   color: var(--white);
   font-weight: normal;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.5;
   -webkit-line-clamp: 3;
 }
 /*post文章信息字体大小*/
 #post-info #post-meta {
   color: var(--light-grey);
-  font-size: 100%;
+  font-size: 80%;
 }
 /*copyright声明字体大小*/
 #post .post-copyright {
@@ -353,7 +353,7 @@ a > img, .justified-gallery > div > img,
 }
 /*评论两个字字体大小*/
 #post-comment .comment-head .comment-headline {
-  font-size: 1.5em !important;
+  font-size: 1em !important;
 }
 /*页脚字体大小*/
 #footer-wrap {
@@ -473,10 +473,10 @@ table th, table td {
 /*手机端优化end*/
 .tk-meta-input .el-input[data-v-5087bc56] .el-input-group__prepend {
   padding: 0 1rem;
-  font-size: large;
+  font-size: medium;
 }
 .tk-comments-title[data-v-2619081a] {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1rem;
   display: flex;
@@ -502,4 +502,19 @@ table th, table td {
   display: flex;
   flex-wrap: wrap;
   font-size: medium;
+}
+#page-header #site-subtitle {
+  font-size: 1.5em;
+}
+
+#recent-posts > .recent-post-item > .recent-post-info > .article-title {
+  font-size: 1.5em;
+}
+#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap {
+  font-size: 80%;
+}
+#recent-posts > .recent-post-item > .recent-post-info > .content {
+  margin-top: 0.3rem;
+  -webkit-line-clamp: 3;
+  font-size: 18px;
 }
