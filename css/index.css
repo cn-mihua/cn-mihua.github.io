@@ -8542,19 +8542,19 @@ h1#site-title {
   display: inline;
   padding: 0 0 0 0.7rem;
   font-family: 'Candyhome', sans-serif;
-  font-size: larger;
+  font-size: x-large;
 }
 #nav .menus_items {
   display: inline;
   font-family: 'Candyhome', sans-serif;
-  font-size: larger;
+  font-size: x-large;
 }
 #nav #site-name {
   text-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 15%);
   font-weight: bold;
   cursor: pointer;
   font-family: 'Candyhome', sans-serif;
-  font-size: larger;
+  font-size: x-large;
 }
 /* 归档半透明 */
 div#archive {
@@ -8634,7 +8634,7 @@ div#archive {
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: larger !important;
+  font-size: x-large !important;
   /* 可以定义图标大小 */
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -8957,7 +8957,7 @@ h1 {
   font-size: x-large;
 }
 h2 {
-  font-size: larger;
+  font-size: x-large;
 }
 h3 {
   font-size: large;
@@ -8987,7 +8987,7 @@ table th, table td {
 /*手机端优化end*/
 .tk-meta-input .el-input[data-v-5087bc56] .el-input-group__prepend {
   padding: 0 1rem;
-  font-size: larger;
+  font-size: x-large;
 }
 .tk-comments-title[data-v-2619081a] {
   font-size: 1.5rem;
@@ -9002,13 +9002,13 @@ table th, table td {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: larger;
+  font-size: x-large;
 }
 .tk-content[data-v-d82ce9a0] {
   margin-top: 0.5rem;
   overflow: auto;
   max-height: 500px;
-  font-size: larger;
+  font-size: x-large;
 }
 .tk-extras[data-v-d82ce9a0] {
   color: #999999;
