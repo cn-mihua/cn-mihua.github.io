@@ -28,19 +28,19 @@ h1#site-title {
   display: inline;
   padding: 0 0 0 0.7rem;
   font-family: 'Candyhome', sans-serif;
-  font-size: 24px;
+  font-size: larger;
 }
 #nav .menus_items {
   display: inline;
   font-family: 'Candyhome', sans-serif;
-  font-size: 24px;
+  font-size: larger;
 }
 #nav #site-name {
   text-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 15%);
   font-weight: bold;
   cursor: pointer;
   font-family: 'Candyhome', sans-serif;
-  font-size: 24px;
+  font-size: larger;
 }
 /* 归档半透明 */
 div#archive {
@@ -96,7 +96,7 @@ div#archive {
   padding: 1rem 1.2rem;
   border-radius: 8px;
   font-family: 'Candyhome', sans-serif;
-  font-size: 15px;
+  font-size: large;
   background: rgba(255,255,255,.8);
   -webkit-box-shadow: var(--card-box-shadow);
   box-shadow: var(--card-box-shadow);
@@ -120,7 +120,7 @@ div#archive {
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 1.3em;
+  font-size: larger !important;
   /* 可以定义图标大小 */
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -221,7 +221,7 @@ h5 {
 #article-container {
   word-wrap: break-word;
   overflow-wrap: break-word;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
 }
 #article-container h1:before {
@@ -279,7 +279,7 @@ a > img, .justified-gallery > div > img,
 .table-wrap {
   overflow-x: scroll;
   margin: 0 0 1rem;
-  font-size: medium;
+  font-size: large;
 }
 
 /*评论区发送预览按钮*/
@@ -334,18 +334,18 @@ a > img, .justified-gallery > div > img,
   margin-bottom: 0.4rem;
   color: var(--white);
   font-weight: normal;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.5;
   -webkit-line-clamp: 3;
 }
 /*post文章信息字体大小*/
 #post-info #post-meta {
   color: var(--light-grey);
-  font-size: 80%;
+  font-size: 100%;
 }
 /*copyright声明字体大小*/
 #post .post-copyright {
-  font-size: medium !important;
+  font-size: large !important;
 }
 /*相关文章字体大小*/
 .relatedPosts > .headline {
@@ -353,7 +353,7 @@ a > img, .justified-gallery > div > img,
 }
 /*评论两个字字体大小*/
 #post-comment .comment-head .comment-headline {
-  font-size: 1em !important;
+  font-size: 1.5em !important;
 }
 /*页脚字体大小*/
 #footer-wrap {
@@ -471,3 +471,35 @@ table th, table td {
 }
 }
 /*手机端优化end*/
+.tk-meta-input .el-input[data-v-5087bc56] .el-input-group__prepend {
+  padding: 0 1rem;
+  font-size: larger;
+}
+.tk-comments-title[data-v-2619081a] {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.tk-row[data-v-d82ce9a0] {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: larger;
+}
+.tk-content[data-v-d82ce9a0] {
+  margin-top: 0.5rem;
+  overflow: auto;
+  max-height: 500px;
+  font-size: larger;
+}
+.tk-extras[data-v-d82ce9a0] {
+  color: #999999;
+  font-size: 0.875em;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: medium;
+}
