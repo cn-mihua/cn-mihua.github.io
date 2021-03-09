@@ -9036,6 +9036,16 @@ table th, table td {
 #clock {
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px){
+.blog-slider {
+    min-height: 350px;
+    height: auto;
+    margin-top: 110px;
+    margin-bottom: 10px;
+    display: none;
+    }
+}
 .search-dialog {
   position: fixed;
   top: 5rem;
