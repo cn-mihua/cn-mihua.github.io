@@ -8542,12 +8542,12 @@ h1#site-title {
   display: inline;
   padding: 0 0 0 0.7rem;
   font-family: 'Candyhome', sans-serif;
-  font-size: large;
+  font-size: 25px;
 }
 #nav .menus_items {
   display: inline;
   font-family: 'Candyhome', sans-serif;
-  font-size: large;
+  font-size: 25px;
 }
 #nav #site-name {
   text-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 15%);
