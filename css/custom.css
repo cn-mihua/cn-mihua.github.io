@@ -518,3 +518,6 @@ table th, table td {
   -webkit-line-clamp: 3;
   font-size: 18px;
 }
+#clock {
+  font-size: 14px;
+}
