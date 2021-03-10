@@ -4,6 +4,59 @@
   
     
     <entry>
+      <title>sql之索引</title>
+      <link href="posts/63494/"/>
+      <url>posts/63494/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sql之锁</title>
+      <link href="posts/21445/"/>
+      <url>posts/21445/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SQL复习1</title>
+      <link href="posts/36057/"/>
+      <url>posts/36057/</url>
+      
+        <content type="html"><![CDATA[<p>最近做一个数据库的复习。<br>相关书籍：<a href="https://www.ituring.com.cn/book/1880">SQL基础教程（第2版）</a><br>相关视频：<a href="https://www.bilibili.com/video/av62315714">Master_Lisa录制的学习视频</a></p><h1 id="查询基础"><a href="#查询基础" class="headerlink" title="查询基础"></a>查询基础</h1><h2 id="select查询基础"><a href="#select查询基础" class="headerlink" title="select查询基础"></a>select查询基础</h2><h3 id="列的查询"><a href="#列的查询" class="headerlink" title="列的查询"></a>列的查询</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select 列名1，列名2，列名3 from 表名;</span><br></pre></td></tr></table></figure><h3 id="查询所有列"><a href="#查询所有列" class="headerlink" title="查询所有列"></a>查询所有列</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from 表名;</span><br></pre></td></tr></table></figure><h3 id="设定别名"><a href="#设定别名" class="headerlink" title="设定别名"></a>设定别名</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select 列名1 AS 别名1，列名2 AS 别名2，列名3 AS 别名3 from 表名;</span><br></pre></td></tr></table></figure><p><strong>注意，别名为中文时用双引号括起来</strong></p><h3 id="常数查询"><a href="#常数查询" class="headerlink" title="常数查询"></a>常数查询</h3><h4 id="字符串常数"><a href="#字符串常数" class="headerlink" title="字符串常数"></a>字符串常数</h4><h4 id="数字常数"><a href="#数字常数" class="headerlink" title="数字常数"></a>数字常数</h4><h4 id="日期常数"><a href="#日期常数" class="headerlink" title="日期常数"></a>日期常数</h4><h3 id="从结果中删除重复行"><a href="#从结果中删除重复行" class="headerlink" title="从结果中删除重复行"></a>从结果中删除重复行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select distinct 列名 from 表名;</span><br></pre></td></tr></table></figure><p><strong>注意，空值也可以显示出来</strong><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select distinct 列名1，列名2 from 表名;</span><br></pre></td></tr></table></figure><br><strong>删除多行重复，实际上就是删除交集</strong></p><h3 id="根据where语句来选择记录"><a href="#根据where语句来选择记录" class="headerlink" title="根据where语句来选择记录"></a>根据where语句来选择记录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select 列名1，列名2，列名3 </span><br><span class="line">from 表名</span><br><span class="line">where 表名 &#x3D; &#39;xx&#39;;</span><br></pre></td></tr></table></figure><p><strong>用where限定条件</strong></p><h3 id="写注释"><a href="#写注释" class="headerlink" title="写注释"></a>写注释</h3><ul><li>一行注释，–注释内容</li><li>多行注释，/* 注释内容 */</li></ul><h2 id="算数运算符，比较运算符"><a href="#算数运算符，比较运算符" class="headerlink" title="算数运算符，比较运算符"></a>算数运算符，比较运算符</h2><h3 id="算数运算符例子"><a href="#算数运算符例子" class="headerlink" title="算数运算符例子"></a>算数运算符例子</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select sale,sale * 2 </span><br><span class="line">from 表名;  </span><br></pre></td></tr></table></figure><p><strong>注意，当运算元素有null时全部都是null</strong></p><h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><table><thead><tr><th align="left">运算符</th><th align="left">含义</th></tr></thead><tbody><tr><td align="left">=</td><td align="left">和某值相等</td></tr><tr><td align="left">&lt;&gt;</td><td align="left">和某值不相等</td></tr><tr><td align="left">&gt;</td><td align="left">大于</td></tr><tr><td align="left">&gt;=</td><td align="left">大于等于</td></tr><tr><td align="left">&lt;</td><td align="left">小于</td></tr><tr><td align="left">&lt;=</td><td align="left">小于等于</td></tr></tbody></table><ol><li>等于<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">elect 列名1，列名2，列名3</span><br><span class="line">from 表名</span><br><span class="line">where 列名 ＝ 某值</span><br></pre></td></tr></table></figure></li><li>不等于<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select 列名1，列名2，列名3</span><br><span class="line">from 表名</span><br><span class="line">where 列名 ＜＞ 某值</span><br></pre></td></tr></table></figure></li><li>大于<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select 列名1，列名2，列名3</span><br><span class="line">from 表名</span><br><span class="line">where 列名1 - 列名2 &gt; 某值</span><br></pre></td></tr></table></figure></li></ol><h3 id="对于字符串使用不等号时的注意事项"><a href="#对于字符串使用不等号时的注意事项" class="headerlink" title="对于字符串使用不等号时的注意事项"></a>对于字符串使用不等号时的注意事项</h3><h3 id="不能对NULL使用比较运算符"><a href="#不能对NULL使用比较运算符" class="headerlink" title="不能对NULL使用比较运算符"></a>不能对NULL使用比较运算符</h3><h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><h3 id="NOT运算符"><a href="#NOT运算符" class="headerlink" title="NOT运算符"></a>NOT运算符</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT 列名1, 列名2, 列名3</span><br><span class="line">FROM 表名</span><br><span class="line">WHERE NOT sale<span class="emphasis">_price &gt;= 1000;</span></span><br></pre></td></tr></table></figure><p><strong>效果是提取售价小于1000的数据</strong><br><strong>NOT运算符用来否定某一条件，但是不能滥用。</strong>  </p><h3 id="AND运算符和OR运算符"><a href="#AND运算符和OR运算符" class="headerlink" title="AND运算符和OR运算符"></a>AND运算符和OR运算符</h3><p>在 WHERE 子句中使用 AND 运算符或者 OR 运算符，可以对多个查询条件进行组合。<br>AND 运算符在其两侧的查询条件都成立时整个查询条件才成立，其意思相当于“并且”。<br>OR 运算符在其两侧的查询条件有一个成立时整个查询条件都成立，其意思相当于“或者”。  </p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT  product<span class="emphasis">_name, purchase_</span>price</span><br><span class="line">  FROM Product</span><br><span class="line"> WHERE  product<span class="emphasis">_type = &#x27;厨房用具&#x27;</span></span><br><span class="line"><span class="emphasis">   AND sale_</span>price &gt;= 3000;</span><br></pre></td></tr></table></figure><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT product<span class="emphasis">_name, purchase_</span>price</span><br><span class="line">  FROM Product</span><br><span class="line"> WHERE product<span class="emphasis">_type = &#x27;厨房用具&#x27;</span></span><br><span class="line"><span class="emphasis">    OR sale_</span>price &gt;= 3000;</span><br></pre></td></tr></table></figure><h3 id="通过括号强化处理"><a href="#通过括号强化处理" class="headerlink" title="通过括号强化处理"></a>通过括号强化处理</h3><p><strong>AND运算符的优先级高于OR运算符。想要优先执行OR运算符时可以使用括号。</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT product<span class="emphasis">_name, product_</span>type, regist<span class="emphasis">_date</span></span><br><span class="line"><span class="emphasis">  FROM Product</span></span><br><span class="line"><span class="emphasis"> WHERE product_</span>type = &#x27;办公用品&#x27;</span><br><span class="line">   AND (   regist<span class="emphasis">_date = &#x27;2009-09-11&#x27;</span></span><br><span class="line"><span class="emphasis">        OR regist_</span>date = &#x27;2009-09-20&#x27;);</span><br></pre></td></tr></table></figure><p><strong>此时先判断or语句，再判断and语句</strong></p><h3 id="逻辑运算符和真值"><a href="#逻辑运算符和真值" class="headerlink" title="逻辑运算符和真值"></a>逻辑运算符和真值</h3><p>运算符 NOT、AND 和 OR 称为逻辑运算符。这里所说的逻辑就是对真值进行操作的意思。<br>真值就是值为真（TRUE）或假（FALSE）其中之一的值。</p><ul><li>但是，在SQL中还存在“不确定”（UNKNOWN）这样的值。接下来会进行详细说明。</li><li>算术运算符返回的结果是数字。除了返回结果的类型不同之外，和比较运算符一样都会返回运算结果。  </li></ul><p><strong>数电里面的基本逻辑运算</strong></p><h3 id="含有NULL时的真值"><a href="#含有NULL时的真值" class="headerlink" title="含有NULL时的真值"></a>含有NULL时的真值</h3><h2 id="聚合与排序"><a href="#聚合与排序" class="headerlink" title="聚合与排序"></a>聚合与排序</h2><h2 id="数据更新"><a href="#数据更新" class="headerlink" title="数据更新"></a>数据更新</h2><h2 id="复杂查询"><a href="#复杂查询" class="headerlink" title="复杂查询"></a>复杂查询</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sql </tag>
+            
+            <tag> 数据库基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>butterfly主题使用文档</title>
       <link href="posts/22748/"/>
       <url>posts/22748/</url>
